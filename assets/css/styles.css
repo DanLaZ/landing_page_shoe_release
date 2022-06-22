@@ -1,0 +1,147 @@
+
+
+/*Variable Section*/
+/* :root {
+
+} */
+
+html,
+body {
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    min-height: 100vh; /* will cover the 100% of viewport */
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+
+/*Header*/
+header {
+    padding-bottom: 10px;
+}
+
+.header_div {
+    background-image: url('https://cdn.shopify.com/s/files/1/0044/2813/6551/products/TomSachsGPSStudioColorway8_a5f102ed-cc11-4885-abc0-0c5faf8b9d20_1024x1024@2x.jpg?v=1654717836');
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header_div h1 ,h2 {
+    font-size: 50px;
+    font-weight: 600;
+    /* border-bottom: 5px orange solid; */
+}
+
+.buy_button_container {
+    height: 100vh;
+    position: relative;
+}
+.buy_button_container img {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header_div a {
+    color: #111111;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 20px;
+    /* border-radius: 50px; */
+    /* background: #FF6600; */
+    border: #FF6600 3px solid;
+    margin: 0;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.header_div a:hover {
+    font-weight: 100;
+    color: white;
+    background: #FF6600;
+}
+
+/*Image Gallery*/
+.item-container {
+    display: grid;
+    grid-template-columns: auto auto;    
+    /* background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    padding: 0px; */
+}
+
+.item-container img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+.item-container img:hover {
+    background: #FF6600 ;
+
+}
+
+/*Footer*/
+.footer_background {
+    background-image: url('https://cdn.shopify.com/s/files/1/0044/2813/6551/products/NikeCraft_Web_ad_b4c6c09c-33d4-4dfa-8d42-86f63a66eec8_1024x1024@2x.jpg?v=1654717836');
+    height: 500px;
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+
+footer img {
+    height: 100%;
+    width: 100%;
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 1100px){
+    .header_div {
+        background-image: none;
+    }
+    .buy_button_container {
+        height: 25vh;
+
+    }
+    .header_div a {
+        top: 50%;
+    }
+}
+@media only screen and (max-width: 535px){
+    .header_div a {
+        padding: 10px;
+        font-size: 40px;
+        top: 60%;
+        }
+    .buy_button_container {
+        height: 10vh;
+    }
+}
+@media only screen and (max-width: 405px){
+    .header_div a {
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 320px){
+    .header_div a {
+        font-size: 15px;
+    }
+}
